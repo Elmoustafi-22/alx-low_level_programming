@@ -1,4 +1,4 @@
-#include <stio.h>
+#include <stdio.h>
 
 /**
  * main -print 0 to 99 using putchar
