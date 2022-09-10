@@ -3,7 +3,8 @@
 #include <time.h>
 /**
  * main -prints last digits of the random numbers
- * return: Always 0 (Sucess)
+ * numbers should be stored in n
+ * Return: Always 0 (Sucess)
  */
 int main(void)
 
