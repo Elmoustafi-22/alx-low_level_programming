@@ -2,8 +2,9 @@
 #include <stdlib.h>
 
 /**
- * main - lowercase and uppercase letters
- * return: Always 0 (Success)
+ * main -prints lowercase and uppercase letters alphabets
+ * except e and q
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
