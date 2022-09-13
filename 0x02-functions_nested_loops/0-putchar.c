@@ -4,7 +4,7 @@
  * main - prints _putchar followed by a newline
  * Return: Always 0 (Success)
  */
-int main()
+int main(void)
 {
 _putchar('_');
 _putchar('p');
