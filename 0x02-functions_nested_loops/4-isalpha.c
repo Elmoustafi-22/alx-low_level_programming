@@ -2,8 +2,8 @@
 
 /**
  *  _isalpha - checks for alphabetic character.
- *  @c - an argument to the fuction
- *  Returns 0 
+ *  @c: is an argument to the fuction
+ *  Return: 0 
  */
 int _isalpha(int c)
 {
