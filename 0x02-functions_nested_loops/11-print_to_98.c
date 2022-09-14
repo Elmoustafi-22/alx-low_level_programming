@@ -3,10 +3,11 @@
 /**
  * print_to_98 - a function that prints all natural numbers from n to 98
  * , followed by a new line
+ * @n: an int argument
  */
 void print_to_98(int n)
 {
-if ( n >= 98)
+if (n >= 98)
 {
 while (n > 98)
 {
