@@ -1,11 +1,11 @@
+#include "main.h"
 #include <stdio.h>
 
 /**
- * main - prints the number from 1 to 100
- * Return: 0
+ * main - prints the number from 1 to 100 followed by a new line
+ * Return: Always 0 (Success)
  */
-
-int main()
+int main(void)
 {
 int a;
 for (a = 1; a <= 100; a++)
@@ -21,5 +21,6 @@ printf(" %d", a);
 else
 printf(" %d", a);
 }
+printf("\n");
 return (0);
 }
