@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- *
- *
- *
+ * print_numbers - multiplies two integers
+ * Return: success
  */
 
 void print_numbers(void)
