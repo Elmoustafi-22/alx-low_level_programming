@@ -14,7 +14,7 @@ else
 int a, b;
 for (a = 1; a < n; a++)
 {
-for (b = 1; a < n; n++)
+for (b = 1; b < n; b++)
 {
 if ( b == a)
 _putchar('\\');
