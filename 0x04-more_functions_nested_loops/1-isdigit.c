@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _isdigit -  checks the digit 
- * @c: this is an argument
- * Return: 1 or 0
+ * _isdigit - check the code for Holberton School students.
+ * @c: characters
+ * Return: 1 and 0
  */
 int _isdigit(int c)
 {
