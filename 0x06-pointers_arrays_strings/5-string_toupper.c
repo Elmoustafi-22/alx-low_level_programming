@@ -2,14 +2,14 @@
 
 /**
 * string_toupper - changes lowercase letters to uppercase
-* 
-* @s: a string 
+* @s: a string
 *
 * Return: the resulting string
 */
 char *string_toupper(char *s)
 {
 	int i;
+
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] >= 'a' && s[i] <= 'z')
