@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-* _strcmp -search n display length
+* _strcmp - search n display length
 *
-* @s: stores the input
-* @accept: source
+* @s1: stores the input
+* @s2: second
 * Return: comp
 */
 int _strcmp(char *s1, char *s2)
