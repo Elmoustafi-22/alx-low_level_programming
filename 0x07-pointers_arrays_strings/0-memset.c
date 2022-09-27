@@ -2,7 +2,7 @@
 
 /**
 * _memset -  function fills the first n bytes of the memory area.
-* @n: fills the first 
+* @n: fills the first
 * @s: points to area
 * @b: constant byte
 *
