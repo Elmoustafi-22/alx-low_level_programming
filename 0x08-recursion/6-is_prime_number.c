@@ -16,7 +16,7 @@ int prime(int a, int j)
 	{
 		return (1);
 	}
-	else 
+	else
 	{
 		return (prime(a + 1, j));
 	}
