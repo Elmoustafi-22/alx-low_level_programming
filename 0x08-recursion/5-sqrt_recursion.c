@@ -10,11 +10,7 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	if (n == 1)
-	{
-		return (1);
-	}
-	return (_sqrt_recurses(n, 2));
+	return (_sqrt_recurses(n, 0));
 }
 
 /**
@@ -27,13 +23,13 @@ int _sqrt_recurses(int n, int i)
 {
 	int sqrt;
 	sqrt = i * i;
-	if (n - sqrt == 0)
+	if (sqrt == n)
 	{
-		return (n);
+		return (i);
 	}
-	else if (n < sqrt)
+	if (n < sqrt)
 	{
 		return (-1);
 	}
-	return (_sqrt_recurses(n, ++i));
+	return (_sqrt_recurses(n, i + 1));
 }
