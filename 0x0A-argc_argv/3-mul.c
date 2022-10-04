@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h"
+#include <stdlib.h>
 
 /**
  * main - a program that multiplies two numbers.
@@ -10,18 +10,16 @@
  */
 int main(int argc, char *argv[])
 {
-	int result, num1, num2;
-
-	if (argc < 3 || argc > 3)
+	int i, mul = 1;
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-
-	num1 = _atoi(argv[1]);
-	num2 = _atoi(argv[2]);
-	result = num1 * num2;
-
-	printf("%d\n", result);
+	for (i = 1; i < argc; i++)
+	{
+		mul *= atoi(argv[i]);
+	}
+	printf("%d\n", mul);
 	return (0);
 }
