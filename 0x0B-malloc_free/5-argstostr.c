@@ -1,79 +1,45 @@
-#include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include "main.h"
 
-
 /**
- * _strlen - returns the length of a given string
+ * *argstostr - concatenates all the arguments of the program
+ * @ac: number of arguments
+ * @av: array of arguments
  *
- *
- * @s: string to check the length of
- * Return: returns the length of the string
- */
-int _strlen(char *s)
-{
-	int i;
-
-	i = 0;
-	while (s[i] != '\0')
-		i++;
-	return (i);
-}
-
-/**
- * _strcat - concat strings, src appended to dest
- *
- * @dest: destination string
- * @src: source string
- * Return: returns finished string
- */
-char *_strcat(char *dest, char *src)
-{
-	int i, j;
-
-	i = j = 0;
-	while (dest[i] != '\0')
-		i++;
-	while (src[j] != '\0')
-		dest[i++] = src[j++];
-	dest[i] = '\0';
-	return (dest);
-}
-
-/**
- * argstostr - concats together program arguments into one string
- *
- *
- * @ac: argument count
- * @av: arguments
- * Return: returns pointer to completed string
+ * Return: Pointer to the new string (Success), NULL (Error)
  */
 char *argstostr(int ac, char **av)
 {
-	char *string;
-	int len, i;
+	int i, j, k, len;
+	char *str;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
-	len = 1;
-	i = 0;
-	while (i < ac)
 
+	for (i = 0; i < ac; i++)
 	{
-		len += _strlen(av[i]) + 1;
-		i++;
+		for (j = 0; av[i][j] != '\0'; j++)
+			len++;
+		len++;
 	}
-	string = malloc(len * sizeof(char));
-	if (string == NULL)
+
+	str = malloc(sizeof(char) * (len + 1));
+
+	if (str == NULL)
 		return (NULL);
-	i = 0;
-	while (i < ac)
+
+	k = 0;
+
+	for (i = 0; i < ac; i++)
 	{
-		_strcat(string, av[i++]);
-		_strcat(string, "\n");
+		for (j = 0; av[i][j] != '\0'; j++)
+		{
+			str[k] = av[i][j];
+			k++;
+		}
+		str[k] = '\n';
+		k++;
 	}
-	if (!string)
-		return (NULL);
-	return (string);
+
+	return (str);
 }
