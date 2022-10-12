@@ -5,7 +5,7 @@
  * @array: name of the person
  * @size: void
  * @action: void
- * Return: Nothing.
+ * Return: Always 0.
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
