@@ -1,10 +1,13 @@
-#ifndef FILE_H
-#define FILE_H
+#ifndef CALC_H
+#define CALC_H
 /**
  * struct op - Structure op
  * @op: operator
  * @f: function
  */
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 typedef struct op
 {
 	char *op;
