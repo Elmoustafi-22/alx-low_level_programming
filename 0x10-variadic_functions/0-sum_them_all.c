@@ -1,48 +1,23 @@
- #include "variadic_functions.h"
-
+#include "variadic_functions.h"
 /**
- * print_all - prints anything
- * @format: list of types of arguments passed to the function
+ * sum_them_all - check the sum.
+ * @n: number
+ * Return: Always 0.
  */
-void print_all(const char * const format, ...)
+int sum_them_all(const unsigned int n, ...)
 {
-	int i = 0;
-	char *str, *sep = "";
-
-	va_list list;
-
-	va_start(list, format);
-
-	if (format)
+	unsigned int i;
+	int sum = 0;
+	va_list arguments;
+	va_start(arguments, n);
+	if (n == 0)
 	{
-		while (format[i])
-		{
-			switch (format[i])
-			{
-				case 'c':
-					printf("%s%c", sep, va_arg(list, int));
-					break;
-				case 'i':
-					printf("%s%d", sep, va_arg(list, int));
-					break;
-				case 'f':
-					printf("%s%f", sep, va_arg(list, double));
-					break;
-				case 's':
-					str = va_arg(list, char *);
-					if (!str)
-						str = "(nil)";
-					printf("%s%s", sep, str);
-					break;
-				default:
-					i++;
-					continue;
-			}
-			sep = ", ";
-			i++;
-		}
+		return (0);
 	}
-
-	printf("\n");
-	va_end(list);
+	for (i = 0; i < n; i++)
+	{
+		sum += va_arg(arguments, int);
+	}
+	va_end(arguments);
+	return (sum);
 }
