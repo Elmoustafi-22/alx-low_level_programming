@@ -26,8 +26,7 @@ int countsSetBits(unsigned long int n)
   * Return: the converted number
   */
 
- unsigned int flip_bits(unsigned long int n, unsigned long int m)
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	return (countsSetBits(n ^ m));
 }
-		  
