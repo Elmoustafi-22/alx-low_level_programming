@@ -19,12 +19,12 @@ int countsSetBits(unsigned long int n)
 	return (count);
 }
 
- /**
-  * flip_bits - returns the number of bits to flip.
-  * @n: containing the number
-  * @m: containing the number
-  * Return: the converted number
-  */
+/**
+ * flip_bits - flips index to x0r.
+ * @n: containing the number
+ * @m: containing the number
+ * Return: the converted number
+ */
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
