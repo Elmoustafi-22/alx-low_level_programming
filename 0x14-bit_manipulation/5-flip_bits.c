@@ -1,17 +1,6 @@
 #include "main.h"
 
 /**
- * flip_bits - returns the number of bits to flip.
- * @n: containing the number
- * @m: containing the number
- * Return: the converted number
- */
-unsigned int flip_bits(unsigned long int n, unsigned long int m)
-{
-	return (countSetBits(n ^ m));
-}
-
-/**
  * countsSetBits - counter
  * @n: containing the number
  * Return: the converted number
@@ -29,3 +18,16 @@ int countsSetBits(unsigned long int n)
 		return (-1);
 	return (count);
 }
+
+ /**
+  * flip_bits - returns the number of bits to flip.
+  * @n: containing the number
+  * @m: containing the number
+  * Return: the converted number
+  */
+
+ unsigned int flip_bits(unsigned long int n, unsigned long int m)
+{
+	return (countsSetBits(n ^ m));
+}
+		  
